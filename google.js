@@ -9,7 +9,6 @@ async function googleSearch(query) {
     const response = await axios.get(url);
     const items = response.data.items;
     if (items) {
-      // Extract and return the title, snippet, and link of the first result
       const firstResult = items[0];
       return {
         title: firstResult.title,
