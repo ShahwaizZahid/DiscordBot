@@ -1,4 +1,5 @@
 const { REST, Routes } = require("discord.js");
+
 require("dotenv").config();
 
 const commands = [
@@ -16,7 +17,8 @@ async function commandor() {
       body: commands,
     });
   } catch (error) {
-    console.error(error);
+    console.error(`Errro in command , ${error}`);
   }
 }
+
 commandor();

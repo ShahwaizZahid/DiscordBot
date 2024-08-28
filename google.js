@@ -1,5 +1,7 @@
 const axios = require("axios");
+
 require("dotenv").config();
+
 async function googleSearch(query) {
   const apiKey = process.env.GOOGLE_API_KEY;
   const cseId = process.env.GOOGLE_CSE_ID;

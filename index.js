@@ -1,5 +1,7 @@
 const { Client, GatewayIntentBits } = require("discord.js");
+
 const axios = require("axios");
+
 require("dotenv").config();
 
 const { googleSearch } = require("./google");
